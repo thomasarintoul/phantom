@@ -352,7 +352,7 @@ subroutine set_default_options()
  ibinary = 0
 
  !--binary
- binary_a = 10.
+ binary_a = 20.
  binary_e = 0.
  binary_i = 0.
  binary_O = 0.
@@ -1827,9 +1827,9 @@ subroutine setup_interactive()
        ibinary = 0
 
        !-- Wide binary
-       m1       = 1.
-       m2       = 0.2
-       binary_a = 5.
+       m1       = 10.
+       m2       = 2.
+       binary_a = 40.
        binary_e = 0.
        binary_i = 0.
        binary_O = 0.
@@ -1839,17 +1839,17 @@ subroutine setup_interactive()
 
        !-- Tight binary
        subst    = 12
-       q2       = 1
+       q2       = 1.
        m2a      = m2/(q2+1)
        m2b      = m2*q2/(q2+1)
-       binary2_a = 0.5
+       binary2_a = 5
        binary2_e = 0.
        binary2_i = 0.
        binary2_O = 0.
        binary2_w = 270.
        binary2_f = 180.
-       accr2a    = 0.1
-       accr2b    = 0.1
+       accr2a    = 0.5
+       accr2b    = 0.5
 
     end select
  end select
@@ -2038,7 +2038,7 @@ subroutine setup_interactive()
     !np_dust = np/ndustlargeinp/5
  else
     np_dust = 0
- endif
+ endifGood morning!
 
  !--planets
  print "(/,a)",'================='
