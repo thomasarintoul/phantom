@@ -390,7 +390,8 @@ subroutine set_default_options()
  iwarp        = .false.
  pindex       = 1.
  qindex       = 0.25
- alphaSS      = 0.005
+! alphaSS      = 0.005
+ alphaSS      = 0.1
  posangl      = 0.
  incl         = 0.
  H_R          = 0.05
@@ -424,7 +425,7 @@ subroutine set_default_options()
  gsizemincgs = 5.e-3
 
  !--resolution
- np = 200000
+ np = 500000
  np_dust = np/maxdustlarge/5
 
  !--planets
@@ -1827,29 +1828,29 @@ subroutine setup_interactive()
        ibinary = 0
 
        !-- Wide binary
-       m1       = 10.
-       m2       = 2.
-       binary_a = 40.
+       m1       = 2.
+       m2       = 1.
+       binary_a = 10.
        binary_e = 0.
        binary_i = 0.
        binary_O = 0.
        binary_w = 270.
        binary_f = 180.
-       accr1    = 1.
+       accr1    = 0.1
 
        !-- Tight binary
        subst    = 12
        q2       = 1.
        m2a      = m2/(q2+1)
        m2b      = m2*q2/(q2+1)
-       binary2_a = 5.
+       binary2_a = 1.
        binary2_e = 0.
        binary2_i = 0.
        binary2_O = 0.
        binary2_w = 270.
        binary2_f = 180.
-       accr2a    = 0.5
-       accr2b    = 0.5
+       accr2a    = 0.1
+       accr2b    = 0.1
 
     end select
  end select
