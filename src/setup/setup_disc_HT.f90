@@ -1842,7 +1842,7 @@ subroutine setup_interactive()
        q2       = 1.
        m2a      = m2/(q2+1)
        m2b      = m2*q2/(q2+1)
-       binary2_a = 5
+       binary2_a = 5.
        binary2_e = 0.
        binary2_i = 0.
        binary2_O = 0.
@@ -2038,7 +2038,7 @@ subroutine setup_interactive()
     !np_dust = np/ndustlargeinp/5
  else
     np_dust = 0
- endifGood morning!
+ endif
 
  !--planets
  print "(/,a)",'================='
